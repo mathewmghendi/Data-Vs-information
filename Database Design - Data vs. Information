@@ -1,0 +1,55 @@
+Table: In a relational database, data is organized into tables, which consist of rows and columns. Each row represents a record, and each column represents a field or attribute.
+
+Record: Also known as a row, a record is a single instance of data stored in a table. It contains values corresponding to each field or column in the table.
+
+Field: Also known as a column, a field represents a single piece of data stored in a table. Each field typically corresponds to a specific attribute of the entities represented by the table.
+
+Primary Key: A primary key is a unique identifier for each record in a table. It ensures that each record can be uniquely identified and helps enforce data integrity and relational integrity within the database.
+
+SQL (Structured Query Language): SQL is a standardized programming language used for managing and manipulating relational databases. It allows users to perform tasks such as querying data, updating records, and defining database structures.
+
+Query: A query is a request for information from a database. It typically involves retrieving data that meets certain criteria or conditions specified by the user.
+
+Index: An index is a data structure that improves the speed of data retrieval operations on a database table. It stores the values of certain columns in a sorted order, allowing for faster lookup and retrieval of records.
+
+Normalization: Normalization is the process of organizing data in a database to reduce redundancy and dependency. It involves breaking down large tables into smaller, related tables and defining relationships between them to minimize data duplication and ensure data integrity.
+
+Database Management System (DBMS): A DBMS is software that facilitates the creation, management, and use of databases. It provides tools and interfaces for users to interact with the database, store and retrieve data, and perform various database operations.
+Purpose of a Primary Key:
+The primary key in a database table serves as a unique identifier for each record within that table. Its main purposes are:
+
+Uniqueness: Ensures that each record in the table is uniquely identified by the primary key. This prevents duplicate records and maintains data integrity.
+
+Data Integrity: Helps enforce data integrity by ensuring that each record can be uniquely identified and related to other records in the database.
+
+Relationships: Facilitates the establishment of relationships between tables in a relational database. Foreign keys in other tables can reference the primary key in a table, enabling the creation of meaningful relationships between data entities.
+
+Example:
+Consider a table named Employees with the following fields:
+
+EmployeeID (Primary Key)
+Name
+Department
+Salary
+In this example, the EmployeeID field serves as the primary key. It uniquely identifies each employee record within the Employees table. This ensures that no two employees have the same EmployeeID, maintaining data integrity and enabling efficient retrieval and management of employee data.
+
+Difference between DBMS and Database:
+
+Database: A database is an organized collection of structured data stored electronically in a computer system. It consists of tables, each containing rows and columns, to represent data entities and their attributes. Databases can be relational (e.g., SQL databases like MySQL, PostgreSQL) or non-relational (e.g., NoSQL databases like MongoDB).
+
+Database Management System (DBMS): A DBMS is software that enables users to interact with databases. It provides tools and interfaces for creating, managing, and querying databases. DBMS handles tasks such as data storage, retrieval, modification, and security. Examples of DBMS include MySQL, Oracle Database, Microsoft SQL Server, and MongoDB.
+
+In essence, a database is the repository for storing data, while a DBMS is the software that manages and facilitates access to that data.
+
+Importance of Normalization:
+
+Normalization is a database design technique used to organize data efficiently and eliminate redundancy by breaking down large tables into smaller, related tables. It improves data integrity, reduces data duplication, and ensures consistency within the database.
+
+Example:
+Consider a database for a library. Instead of storing all book information in a single table, normalization involves breaking down the data into multiple tables such as Books, Authors, and Categories. Each table contains specific information related to its entity, and relationships are established between them using primary and foreign keys.
+
+Normalization improves data integrity by reducing anomalies such as:
+
+Insertion Anomalies: Ensures that inserting new data doesn't require adding redundant information.
+Update Anomalies: Updates to data are made in one place, avoiding inconsistencies.
+Deletion Anomalies: Deleting data from one table doesn't result in loss of related data from other tables.
